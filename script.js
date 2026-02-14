@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         if (iosBtn) iosBtn.classList.add('highlight-btn');
         if (storeLinkBtn) {
-            storeLinkBtn.href = "https://apps.apple.com/app/commitcrew";
-            storeLinkBtn.textContent = "Download on App Store";
+            storeLinkBtn.href = "#download";
+            storeLinkBtn.textContent = "Get the App";
         }
     } else if (/android/i.test(userAgent)) {
         if (androidBtn) androidBtn.classList.add('highlight-btn');
         if (storeLinkBtn) {
-            storeLinkBtn.href = "https://play.google.com/store/apps/details?id=com.commitcrew.app";
-            storeLinkBtn.textContent = "Get on Google Play";
+            storeLinkBtn.href = "https://expo.dev/accounts/kmo/projects/commitcrew/builds/a11df60e-45b1-4443-a4bc-66e84a3714c9";
+            storeLinkBtn.textContent = "Download for Android";
         }
     } else {
         // Desktop or other - Default behaviors
