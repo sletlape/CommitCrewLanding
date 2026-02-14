@@ -256,8 +256,11 @@ h3,
     padding: 12px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
     border: 8px solid #2a2a2a;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     transition: transform 0.3s ease;
+    height: auto;
 }
 
 .phone-mockup:hover {
@@ -268,6 +271,7 @@ h3,
     width: 100%;
     border-radius: 28px;
     display: block;
+    height: auto;
 }
 
 .decorative-blob {
@@ -384,13 +388,21 @@ h3,
     padding: 12px;
     box-shadow: 25px 25px 50px -12px rgba(0, 0, 0, 0.5);
     border: 8px solid #2a2a2a;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     transition: transform 0.3s ease;
     transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
 }
 
 .phone-mockup-tilted:hover {
     transform: perspective(1000px) rotateY(-10deg) rotateX(5deg) translateY(-10px);
+}
+
+.phone-mockup-tilted img {
+    width: 100%;
+    border-radius: 28px;
+    display: block;
 }
 
 /* CTA */
@@ -490,7 +502,6 @@ h3,
 
     .phone-mockup-tilted {
         transform: none;
-        margin: 0 auto;
     }
 
     .nav-links {
