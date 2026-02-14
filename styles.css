@@ -256,7 +256,7 @@ h3,
     padding: 12px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
     border: 8px solid #2a2a2a;
-    max-width: 320px;
+    max-width: 420px;
     width: 100%;
     margin: 0 auto;
     transition: transform 0.3s ease;
@@ -388,7 +388,7 @@ h3,
     padding: 12px;
     box-shadow: 25px 25px 50px -12px rgba(0, 0, 0, 0.5);
     border: 8px solid #2a2a2a;
-    max-width: 320px;
+    max-width: 420px;
     width: 100%;
     margin: 0 auto;
     transition: transform 0.3s ease;
