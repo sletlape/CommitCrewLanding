@@ -60,6 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Manage spots remaining
+    const spotsRemaining = 48;
+    const spotsBadge = document.getElementById('spots-count-badge');
+    const spotsMain = document.getElementById('spots-count-main');
+    if (spotsBadge) spotsBadge.innerText = spotsRemaining;
+    if (spotsMain) spotsMain.innerText = spotsRemaining;
+
     // Automatically shows "Today" or "Yesterday" for spots remaining
     const dateElement = document.getElementById('current-date');
     const options = { month: 'long', day: 'numeric' };
