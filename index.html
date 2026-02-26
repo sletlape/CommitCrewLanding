@@ -29,16 +29,30 @@
                 <a href="#how-it-works">How it Works</a>
                 <a href="#download" class="btn btn-primary btn-sm">Get the App</a>
             </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <div class="mobile-nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it Works</a>
+            <a href="#download" class="btn btn-primary btn-sm">Get the App</a>
+        </div>
+    </div>
 
     <header class="hero">
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="badge">Early Access</div>
+                <div class="badge">🚀 Early Access — Android</div>
                 <h1 class="hero-title">Build Better Habits, <span class="text-gradient">Together</span>.</h1>
-                <p class="hero-subtitle">Stop failing alone. Join a crew, track your daily goals, and climb the
-                    leaderboard with friends.</p>
+                <p class="hero-subtitle">Stop failing alone. Join a crew, check in daily, and climb the leaderboard
+                    with your friends.</p>
                 <div class="hero-actions">
                     <a href="javascript:void(0)" class="store-btn ios-btn disabled">
                         <div class="coming-soon-badge">Coming Soon</div>
@@ -60,7 +74,7 @@
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
-                    <img src="assets/app-preview.png" alt="CommitCrew App Screenshot">
+                    <img src="assets/MVP screens/Checkin-NoCheckin.jpeg" alt="CommitCrew Check-in Screen">
                 </div>
                 <div class="decorative-blob blob-1"></div>
                 <div class="decorative-blob blob-2"></div>
@@ -77,22 +91,63 @@
                         <i data-lucide="users"></i>
                     </div>
                     <h3>Crew Accountability</h3>
-                    <p>Don't just track for yourself. Your progress contributes to your crew's score. Let the team down?
-                        No way.</p>
+                    <p>Your crew sees your progress. Every check-in earns points and keeps the whole team motivated. No one wants to let the crew down.</p>
                 </div>
                 <div class="feature-card fade-in delay-1">
                     <div class="icon-box">
                         <i data-lucide="flame"></i>
                     </div>
                     <h3>Daily Streaks</h3>
-                    <p>Keep the fire burning. Visual streak tracking makes consistency addictive and rewarding.</p>
+                    <p>Build momentum with streak tracking. Watch your 14-day streak grow as consistency becomes second nature.</p>
                 </div>
                 <div class="feature-card fade-in delay-2">
                     <div class="icon-box">
                         <i data-lucide="trophy"></i>
                     </div>
                     <h3>Leaderboards</h3>
-                    <p>Friendly competition drives results. See how you stack up against your crewmates every week.</p>
+                    <p>Friendly competition drives results. See who's leading in points and streak days across your crew.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps to build habits that actually stick.</p>
+
+            <div class="steps-grid">
+                <div class="step-item fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-phone">
+                        <div class="phone-mockup-sm">
+                            <img src="assets/MVP screens/Checkin-checkin.jpeg" alt="Daily Check-in">
+                        </div>
+                    </div>
+                    <h3>Check In Daily</h3>
+                    <p>One tap to confirm you did the work. Earn points and extend your streak with every check-in.</p>
+                </div>
+
+                <div class="step-item fade-in delay-1">
+                    <div class="step-number">2</div>
+                    <div class="step-phone">
+                        <div class="phone-mockup-sm">
+                            <img src="assets/MVP screens/Checkin-stats.jpeg" alt="Track Your Stats">
+                        </div>
+                    </div>
+                    <h3>Track Progress</h3>
+                    <p>See your weekly activity and monthly consistency. Beautiful charts show exactly how far you've come.</p>
+                </div>
+
+                <div class="step-item fade-in delay-2">
+                    <div class="step-number">3</div>
+                    <div class="step-phone">
+                        <div class="phone-mockup-sm">
+                            <img src="assets/MVP screens/myCrew-Leaderboard.jpeg" alt="Crew Leaderboard">
+                        </div>
+                    </div>
+                    <h3>Compete & Motivate</h3>
+                    <p>See how you stack up against your crewmates. Points, streaks, and friendly rivalry keep everyone going.</p>
                 </div>
             </div>
         </div>
@@ -101,18 +156,47 @@
     <section class="app-showcase">
         <div class="container showcase-container">
             <div class="showcase-content fade-in-left">
-                <h2>Designed for Focus</h2>
-                <p>A simple, beautiful interface that puts your goals front and center. No distractions, just
-                    progress.</p>
+                <h2>Your Crew, <span class="text-gradient">Always Active</span></h2>
+                <p>See real-time updates from your crewmates. Celebrate wins together, send encouragement, and stay
+                    connected on your shared mission.</p>
                 <ul class="feature-list">
-                    <li><i data-lucide="check-circle-2"></i> Simple daily check-ins</li>
-                    <li><i data-lucide="check-circle-2"></i> Beautiful data visualization</li>
-                    <li><i data-lucide="check-circle-2"></i> Real-time crew updates</li>
+                    <li><i data-lucide="check-circle-2"></i> Live activity feed of crew check-ins</li>
+                    <li><i data-lucide="check-circle-2"></i> Send encouragement to crewmates 🔥</li>
+                    <li><i data-lucide="check-circle-2"></i> Invite friends with a simple crew code</li>
                 </ul>
             </div>
             <div class="showcase-image fade-in-right">
                 <div class="phone-mockup-tilted">
-                    <img src="assets/crew-detail.png" alt="Crew Dashboard">
+                    <img src="assets/MVP screens/myCrew-Activity.jpeg" alt="Crew Activity Feed">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="celebration-section">
+        <div class="container celebration-container">
+            <div class="celebration-image fade-in-left">
+                <div class="phone-mockup-tilted reverse">
+                    <img src="assets/MVP screens/Checkin-checkin confetti.jpeg" alt="Check-in Celebration">
+                </div>
+            </div>
+            <div class="celebration-content fade-in-right">
+                <h2>Every Check-in <span class="text-gradient">Feels Like a Win</span></h2>
+                <p>We believe small wins deserve big celebrations. Confetti, streaks, and points make every day feel
+                    rewarding — because consistency should feel good, not like a chore.</p>
+                <div class="stat-highlights">
+                    <div class="stat-item">
+                        <span class="stat-value">🔥 15</span>
+                        <span class="stat-label">Day Streak</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">⭐ 195</span>
+                        <span class="stat-label">Points Earned</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">🎉 100%</span>
+                        <span class="stat-label">This Week</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,10 +204,11 @@
 
     <section id="download" class="cta">
         <div class="container cta-container">
-            <h2>Ready to Commit?</h2>
-            <p>Join thousands of others building better habits today.</p>
-            <div class="hero-actions">
-                <a href="#" class="btn btn-primary btn-lg store-link">Download Now</a>
+            <h2>Ready to <span class="text-gradient">Commit</span>?</h2>
+            <p>Join the crew. Build the habit. Don't break the streak.</p>
+            <div class="hero-actions cta-actions">
+                <a href="https://expo.dev/accounts/kmo/projects/commitcrew/builds/a11df60e-45b1-4443-a4bc-66e84a3714c9"
+                    target="_blank" class="btn btn-primary btn-lg store-link">Download for Android</a>
             </div>
         </div>
     </section>

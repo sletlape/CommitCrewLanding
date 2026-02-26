@@ -23,6 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
         if (storeLinkBtn) storeLinkBtn.href = "#features";
     }
 
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav-overlay');
+
+    if (menuBtn && mobileNav) {
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close menu when a link is clicked
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
     // Scroll Animation Observer
     const observerOptions = {
         threshold: 0.1,
@@ -51,5 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(9, 9, 11, 0.95)';
+        } else {
+            navbar.style.background = 'rgba(9, 9, 11, 0.8)';
+        }
     });
 });
