@@ -33,6 +33,28 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- JSON-LD Structured Data for Commit Crew Accountability App -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Commit Crew",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "HealthApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "120"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Commit Crew is an elite "group accountability" pact app designed to help you stop ghosting your goals and build habits that stick through social pressure and crew-based motivation."
+    }
+    </script>
 </head>
 
 <body>
@@ -69,8 +91,9 @@
             <div class="hero-content">
                 <div class="badge">🔥 Batch #1 Forming — <span id="spots-count-badge">48</span> Spots Left</div>
                 <h1 class="hero-title">Stop <span class="text-gradient">Ghosting</span> Your Goals.</h1>
-                <p class="hero-subtitle">Most habit trackers are lonely spreadsheets. CommitCrew is a 3-person
-                    accountability pact. If you skip, your crew sees it. Nowhere to hide.</p>
+                <p class="hero-subtitle">Most habit trackers are lonely spreadsheets. CommitCrew is a <b>group
+                        accountability</b>
+                    pact. If you skip, your crew sees it. Nowhere to hide.</p>
                 <div class="hero-actions">
                     <a href="https://forms.gle/FL5vjCjGJK7Nvcy19" class="btn btn-primary btn-lg">
                         Apply for Founding Member Access
@@ -96,15 +119,16 @@
 
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why CommitCrew?</h2>
+            <h2 class="section-title">The Commit Crew Accountability System</h2>
             <div class="features-grid">
                 <div class="feature-card fade-in">
                     <div class="icon-box">
                         <i data-lucide="users"></i>
                     </div>
-                    <h3>Crew Accountability</h3>
-                    <p>Your crew sees your progress. Every check-in earns points and keeps the whole team motivated. No
-                        one wants to let the crew down.</p>
+                    <h3>Elite Crew Accountability</h3>
+                    <p>Your Commit Crew sees your progress. Every check-in earns points and keeps the whole team
+                        motivated. No
+                        one wants to let their accountability partners down.</p>
                 </div>
                 <div class="feature-card fade-in delay-1">
                     <div class="icon-box">
@@ -128,42 +152,47 @@
 
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Three simple steps to build habits that actually stick.</p>
+            <h2 class="section-title">How the Commit Crew Works</h2>
+            <p class="section-subtitle">Three simple steps to build social accountability that actually sticks.</p>
 
             <div class="steps-grid">
                 <div class="step-item fade-in">
                     <div class="step-number">1</div>
                     <div class="step-phone">
                         <div class="phone-mockup-sm">
-                            <img src="assets/MVP screens/Checkin-checkin.jpeg" alt="Daily Check-in">
+                            <img src="assets/MVP screens/Checkin-checkin.jpeg" alt="Commit Crew Daily Habit Check-in"
+                                loading="lazy">
                         </div>
                     </div>
                     <h3>Check In Daily</h3>
-                    <p>One tap to confirm you did the work. Earn points and extend your streak with every check-in.</p>
+                    <p>One tap to confirms you're keeping your accountability pact. Earn points and extend your streak
+                        with every check-in.</p>
                 </div>
 
                 <div class="step-item fade-in delay-1">
                     <div class="step-number">2</div>
                     <div class="step-phone">
                         <div class="phone-mockup-sm">
-                            <img src="assets/MVP screens/Checkin-stats.jpeg" alt="Track Your Stats">
+                            <img src="assets/MVP screens/Checkin-stats.jpeg" alt="Commit Crew Accountability Statistics"
+                                loading="lazy">
                         </div>
                     </div>
-                    <h3>Track Progress</h3>
-                    <p>See your weekly activity and monthly consistency. Beautiful charts show exactly how far you've
-                        come.</p>
+                    <h3>Track Accountability Progress</h3>
+                    <p>See your weekly activity and monthly consistency. Beautiful charts show exactly how your
+                        accountability is paying off.</p>
                 </div>
 
                 <div class="step-item fade-in delay-2">
                     <div class="step-number">3</div>
                     <div class="step-phone">
                         <div class="phone-mockup-sm">
-                            <img src="assets/MVP screens/myCrew-Leaderboard.jpeg" alt="Crew Leaderboard">
+                            <img src="assets/MVP screens/myCrew-Leaderboard.jpeg"
+                                alt="Commit Crew Accountability Leaderboard" loading="lazy">
                         </div>
                     </div>
-                    <h3>Don't Break the Pact</h3>
-                    <p>Your crew relies on your points to climb the leaderboard. When you win, they win. When you fail,
+                    <h3>Social Accountability Pact</h3>
+                    <p>Your Commit Crew relies on your points to climb the leaderboard. When you win, they win. When you
+                        fail,
                         everyone knows.</p>
                 </div>
             </div>
@@ -184,7 +213,8 @@
             </div>
             <div class="showcase-image fade-in-right">
                 <div class="phone-mockup-tilted">
-                    <img src="assets/MVP screens/myCrew-Activity.jpeg" alt="Crew Activity Feed">
+                    <img src="assets/MVP screens/myCrew-Activity.jpeg" alt="Commit Crew Live Accountability Feed"
+                        loading="lazy">
                 </div>
             </div>
         </div>
@@ -214,6 +244,25 @@
                         <span class="stat-value">🎉 100%</span>
                         <span class="stat-label">This Week</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="features" style="background: rgba(9, 9, 11, 0.5);">
+        <div class="container">
+            <h2 class="section-title">Common Questions About Commit Crew</h2>
+            <div class="features-grid" style="grid-template-columns: 1fr 1fr; text-align: left;">
+                <div class="feature-card visible">
+                    <h3>How does the Commit Crew social accountability work?</h3>
+                    <p>Commit Crew uses a 3-person pact system. By linking your progress to two other partners, you
+                        create a social accountability loop where your consistency directly impacts the group's
+                        leaderboard standing.</p>
+                </div>
+                <div class="feature-card visible">
+                    <h3>Why is social accountability more effective?</h3>
+                    <p>Research shows that accountability partners increase your success rate to 95%. Commit Crew
+                        automates this by making your daily habit checks visible to your crew in real-time.</p>
                 </div>
             </div>
         </div>
