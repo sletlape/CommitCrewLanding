@@ -1,28 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // OS Detection
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    const storeLinkBtn = document.querySelector('.store-link');
-    const iosBtn = document.getElementById('ios-download');
-    const androidBtn = document.getElementById('android-download');
-
-    // Highlight appropriate store button
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        if (iosBtn) iosBtn.classList.add('highlight-btn');
-        if (storeLinkBtn) {
-            storeLinkBtn.href = "#download";
-            storeLinkBtn.textContent = "Get the App";
-        }
-    } else if (/android/i.test(userAgent)) {
-        if (androidBtn) androidBtn.classList.add('highlight-btn');
-        if (storeLinkBtn) {
-            storeLinkBtn.href = "https://expo.dev/accounts/kmo/projects/commitcrew/builds/a11df60e-45b1-4443-a4bc-66e84a3714c9";
-            storeLinkBtn.textContent = "Download for Android";
-        }
-    } else {
-        // Desktop or other - Default behaviors
-        if (storeLinkBtn) storeLinkBtn.href = "#features";
-    }
-
     // Mobile Menu Toggle
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav-overlay');
@@ -83,4 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.background = 'rgba(9, 9, 11, 0.8)';
         }
     });
+
+    // Automatically shows "Today" or "Yesterday" for spots remaining
+    const dateElement = document.getElementById('current-date');
+    const options = { month: 'long', day: 'numeric' };
+    dateElement.innerText = new Date().toLocaleDateString(undefined, options);
 });
