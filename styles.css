@@ -801,6 +801,45 @@ h3,
     transform: translateY(0);
 }
 
+/* Thanks Page Styles */
+.thanks-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.thanks-hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.thanks-container {
+    max-width: 800px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.thanks-hero .hero-content {
+    margin: 0 auto;
+}
+
+.thanks-hero .hero-actions {
+    justify-content: center;
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
 .fade-in-left {
     opacity: 0;
     transform: translateX(-40px);
